@@ -5,14 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Henry Holben CPSC332</title>
-    <h1>Homework 1</h1>
-</head>
-<body>
-    <style>
-        body { background-color: lightblue; }
-        h1 { color : white}
-    </style>
+    <h1 style="color: blue;">Homework 1</h1>
 
+    <script>  
+        function colorPicker(color) {
+                document.body.style.background = color;
+            }
+
+        function changeColor() {
+            colorPicker('orange');
+            el_down.innerHTML = "Background Color changed";
+        }         
+    </script> 
+
+</head>
+<body style="background-color:lightblue;">
+    
     <p>
         I hope to gain the skils to be able to code a <em>simple</em> webpage. I also hope to learn 
         enough about HTML that I will be able to work on pre existing websites if needed. 
@@ -27,17 +35,6 @@
     </p>
 
     <button onclick = "changeColor()">I just ate an oragne</button>
-
-    <script>  
-        function colorPicker(color) {
-                document.body.style.background = color;
-            }
-
-        function changeColor() {
-            colorPicker('orange');
-            el_down.innerHTML = "Background Color changed";
-        }         
-    </script> 
 
 </body>
 </html>
